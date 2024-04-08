@@ -111,7 +111,7 @@ int main(int argc, char **argv)
 
     crc32_hash = crc32((const uint8_t *)input_utf16le, ret);
 
-    printf("%-60s : %08x\n", input, crc32_hash);
+    printf("%-60s : %08X  %08x\n", input, crc32_hash, crc32_hash);
 
     free(input_utf16le);
     return 0;
